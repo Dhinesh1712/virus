@@ -11,5 +11,9 @@ router.get('/',function(req,res) {
   res.sendFile(path+'index.html')
 })
 
+router.post('/Submit',function(req,res) {
+  res.sendFile(path+'index.html')
+})
+
 app.listen(11000);
 
