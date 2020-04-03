@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+    <style type ="text/css">
+    body{backgroung-color:#e9caca;}
+    
+    .navbar{
+      background:#002E6E;
+      color:white;
+      border:none;
+      margin-bottom: 0px;
+    }
+
+    .navbar.navbar-nav {
+      display:inline-block;
+      float:none;
+      vertical-align: top;
+    }
+
+    .navbar.navbar-collapse {
+      text-align: center;
+    }
+
+    form {
+      background: #002E6E;
+      padding: 40px;
+      -webkit-box-shadow:9px 15px 39px -9px
+      rgba(0,0,0,0.75);
+      -moz-box-shadow:9px 15px 39px -9px
+      rgba(0,0,0,0.75);
+      box-shadow:9px 15px 39px --9px
+      rgba(0,0,0,0.75);
+      color:white;
+    }
+
+    .nav-tab{
+      margin-left: auto;
+      border-bottom: 1px solid #ddd;
+      margin-right: auto;
+      display: table;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .nav-tabs>li>a {
+      border-radius: 0px;
+      background: #002E6E;
+      color:white;
+    }
+
+    .nav-tabs>li>a:hover {
+      border-radius: 0px;
+      background: #002E6E;
+      color: white;
+    }
+
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Globally</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+       
+
+
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+      
+      
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="row">
+      <h1 style="text-align: center;">COVID-19 Latest Updates</h1>
+
+      <div class="col-sm-offset-2 col-sm-8">
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">World Wide</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">India</a></li>
+       
+      </ul>
+    
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+
+          <form>
+            <div class="form-group row">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Total Cases</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Number Of Cases">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Deaths</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Number Of Deaths">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+          <form>
+            <div class="form-group row">
+              <label for="inputText" class="col-sm-2 col-form-label">States</label>
+              <div class="col-sm-5">
+                <input type="text"  class="form-control" id="inputText" placeholder="Select the States">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Cases</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Total Cases">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Difference</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Number Of Differences">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Active</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Number Of Active Cases">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Recovered</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Number Of Recovered Cases">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputNumber" class="col-sm-2 col-form-label">Diseased</label>
+              <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputNumber" placeholder="Number Of Diseased Cases">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+          </form>
+
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+      
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
