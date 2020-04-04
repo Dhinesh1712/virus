@@ -1,19 +1,21 @@
 const express = require('express');
-const app = express();
+const path = require('path');
+let fs = require('fs');
+let bodyParser = require('body-parser');
 
-let path = __dirname + '/views/'
+ const app = express();
 
-let router = express.Router();
+//  app.use(bodyParser());
 
-app.use('/',router)
+app.get('/',function(req,res) {
+  res.sendFile('index.html',{root: path.join(__dirname,'./views')});
+});
 
-router.get('/',function(req,res) {
-  res.sendFile(path+'index.html')
-})
+app.post('/Submit',function(req,res) {
+  // res.sendFile('index.html',{root: path.join(__dirname,'./views')});
 
-router.post('/Submit',function(req,res) {
-  res.sendFile(path+'index.html')
-})
+    res.end(JSON.stringify(req.body));
+});
 
 app.listen(11000);
 
